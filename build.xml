@@ -1,0 +1,17 @@
+<project name="bookmark-separator" default="deploy" basedir=".">
+
+	<property environment="env" />
+	<property name="deploy_dir" location="${env.HOME}/.local/share/bookmark-separator" />
+
+	<target name="copy">
+		<mkdir dir="${deploy_dir}"/>
+		<copy todir="${deploy_dir}">
+			<file file="index.html" />
+			<file file="favicon-16x16.ico" />
+			<file file="favicon-32x32.gif" />
+		</copy>
+	</target>
+
+	<target name="deploy" depends="copy" />
+
+</project>
