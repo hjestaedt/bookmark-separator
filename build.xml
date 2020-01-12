@@ -8,7 +8,7 @@
 		<copy todir="${deploy_dir}">
 			<file file="index.html" />
 			<file file="favicon-16x16.ico" />
-			<file file="favicon-32x32.gif" />
+			<file file="favicon-16x16.gif" />
 		</copy>
 	</target>
 
